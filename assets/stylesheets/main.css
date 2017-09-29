@@ -1,0 +1,63 @@
+
+.background {
+  background-image: url('../img/twitch-image-2.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 102%;
+}
+
+.twitter {
+  border-bottom: 2px solid black;
+}
+
+
+.left-side {
+  width: 100%;
+}
+.col-md-3 {
+  max-width: 30%;
+}
+
+.video-section {
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.form-group {
+    width: 45%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-bottom: 45px;
+
+}
+
+.three-section {
+    margin-bottom: 100px;
+    background-color: purple;
+}
+
+.container-fluid { max-width: 1200px; }
+
+card {
+	background: #fff;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+	img {
+		width: 100%;
+	}
+
+[class*="row"] {
+	margin-bottom: 1em;
+  justify-content: center;
+}
+
+.footer-section {
+  margin-top: 40px;
+}
+
+.social {
+      margin: 0 auto;
+
+}
