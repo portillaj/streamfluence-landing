@@ -1,0 +1,26 @@
+{
+  "name": "streamfluence-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/portillaj/streamfluence-landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/portillaj/streamfluence-landing/issues"
+  },
+  "homepage": "https://github.com/portillaj/streamfluence-landing#readme",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "twitter": "^1.7.1"
+  }
+}
