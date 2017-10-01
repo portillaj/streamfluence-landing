@@ -1,3 +1,10 @@
+.bg-secondary {
+    background-color: #0066aa !important;
+}
+
+.header a {
+  color: white;
+}
 
 .background {
   background-image: url('../img/twitch-image-2.jpeg');
@@ -8,15 +15,39 @@
 }
 
 .twitter {
-  border-bottom: 2px solid black;
+  overflow: scroll;
+  max-height: 789px;
 }
 
-
-.left-side {
-  width: 100%;
+.list-group-item {
+  background-color: #e0e0e0;
 }
-.col-md-3 {
-  max-width: 30%;
+
+.list-group-item:first-child {
+  border-top: none;
+  margin-top: -8px;
+}
+.twitter-title {
+  font-family: "Lato";
+  background-color: #5d3c9a;
+  padding: 15px;
+}
+
+.twitter-name {
+  position: relative;
+    font-size: 15px;
+}
+
+.twitter-profile-pic {
+  height: 30px;
+  width: 30px;
+}
+
+.twitter-user-name {
+  position: absolute;
+left: 54px;
+top: 33px;
+font-size: 12px;
 }
 
 .video-section {
@@ -59,5 +90,4 @@ card {
 
 .social {
       margin: 0 auto;
-
 }

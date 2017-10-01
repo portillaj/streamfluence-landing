@@ -8,6 +8,7 @@ const port = process.env.PORT || 3000;
 
 //get the css and images files from public directory
 app.use(express.static(__dirname + "/public"));
+app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 var Twitter = require('twitter');
 
@@ -21,24 +22,13 @@ var client = new Twitter({
     consumer_secret: consumerSecret,
     access_token_key: accessToken,
     access_token_secret: accessTokenSecret
-});//end client Twitter constructor
-
-client.get('search/tweets', {q: 'donald trump'}, function(error, tweets, response) {
-   console.log(tweets.statuses[0].text);
-});
-
-// var url = 'https://api.twitter.com/oauth/authorize';
-//
-// axios.get(url)
-//   .then(function (response) {
-//     console.log(response);
-//   })
-//   .catch(function (error) {
-//     console.log(error);
-//   });
+}); //end client Twitter constructor
 
 app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname+'/index.html'));
+   client.get('statuses/user_timeline.json?screen_name=streamFluence&20' , function(error, tweets, response)  {
+          res.render('index', {tweets: tweets });
+   });
+
 });
 //server listening
 app.listen(port, function(){
