@@ -11,8 +11,8 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  width: 102%;
 }
+
 
 .twitter {
   overflow: scroll;
@@ -20,7 +20,7 @@
 }
 
 .list-group-item {
-  background-color: #e0e0e0;
+  background-color: white;
 }
 
 .list-group-item:first-child {
@@ -31,6 +31,13 @@
   font-family: "Lato";
   background-color: #5d3c9a;
   padding: 15px;
+  color: white;
+
+}
+
+.twitter-feed {
+  margin-right: 15px;
+  width: 100%;
 }
 
 .twitter-name {
@@ -51,7 +58,7 @@ font-size: 12px;
 }
 
 .video-section {
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
     margin-top: 150px;
 }

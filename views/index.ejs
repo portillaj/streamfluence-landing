@@ -3,12 +3,9 @@
           <a class="navbar-brand" href="#">Logo Goes Here</a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
     </nav>
-
-    <div class="row">
-      <div class="col-md-9 left-side">
-        <div class="background">
-        <div class="container main-section">
-          <div class="row">
+<div class="row background">
+      <div class="col-sm-12 col-md-8 left-side">
+        <div class="container">
             <div class="embed-responsive embed-responsive-16by9 video-section">
               <iframe class="embed-responsive-item" width="460" height="315" src="https://www.youtube.com/embed/Q0sSmlw8_nI" frameborder="0" allowfullscreen></iframe>
             </div>
@@ -18,11 +15,11 @@
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address">
       </div>
     </form>
-      </div>
-    </div>
-      </div>
 
-      <div class="col-md-3 twitter">
+    </div>
+
+
+      <div class="col-sm-12 col-md-4 twitter">
           <h3 class="text-center twitter-title">Twitter Feed</h3>
           <ul class="list-group twitter-feed">
                      <% tweets.forEach(function(tweet) { %>
@@ -33,6 +30,7 @@
                             <span class="twitter-user-name">@ <%= tweet.user.screen_name %></span>
                             <br />
                             <p><%= tweet.text %></p>
+                            <%= tweet.entities.urls[0].expanded_url %>
 
                          </li>
                          <!-- tweets[0].text,
