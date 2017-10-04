@@ -26,7 +26,6 @@ var client = new Twitter({
 
 app.get('/', function(req, res){
    client.get('statuses/user_timeline.json?screen_name=streamFluence&20' , function(error, tweets, response)  {
-      console.log(tweets[0].entities.urls[0].expanded_url);
           res.render('index', {tweets: tweets });
    });
 

@@ -1,22 +1,33 @@
-.bg-secondary {
-    background-color: #0066aa !important;
+html, body {
+  height: 100%;
 }
-
 .header a {
   color: white;
 }
 
+.top-section {
+  height: 1080px;
+}
+
 .background {
-  background-image: url('../img/twitch-image-2.jpeg');
+background-image: url('../img/twitch-image-1.jpg');*/
+border: 1px solid #979797;
   background-position: center;
   background-size: cover;
+  height: 1500px;
   background-attachment: fixed;
 }
 
+.email-call {
+  width: 65%;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-bottom: -20px;
+}
 
 .twitter {
   overflow: scroll;
-  max-height: 789px;
+  height: 950px;
 }
 
 .list-group-item {
@@ -27,21 +38,40 @@
   border-top: none;
   margin-top: -8px;
 }
+
+.list-group-item:last-child {
+    border-bottom: 1px solid black;
+}
+
 .twitter-title {
   font-family: "Lato";
-  background-color: #5d3c9a;
+  background-color: #0085b6;
   padding: 15px;
   color: white;
+    margin-left: -15px;
+}
 
+.twitter-feed-pic {
+  display: inline-block;
+  margin: 0 auto;
+  height: 105px;
+  width: 105px;
+}
+
+.followers {
+    font-size: 16px;
+}
+
+.followers-number {
+  font-size: 13px;
 }
 
 .twitter-feed {
-  margin-right: 15px;
   width: 100%;
+    margin-left: -15px;
 }
 
 .twitter-name {
-  position: relative;
     font-size: 15px;
 }
 
@@ -64,37 +94,127 @@ font-size: 12px;
 }
 
 .form-group {
-    width: 45%;
+    width: 50%;
     margin: 0 auto;
     margin-top: 50px;
     padding-bottom: 45px;
-
 }
 
-.three-section {
-    margin-bottom: 100px;
-    background-color: purple;
+.slant-left.above {
+     position: relative;
+     color: #1d1d24;
+     margin-top: -50px;
+ }
+
+ div#bg {
+ width: 100%;
+ height: 750px;
+ position: absolute;
+ background-color: #fff;
+ transform: skewY(-12deg);
+ transform-origin: 0;
 }
 
-.container-fluid { max-width: 1200px; }
-
-card {
-	background: #fff;
-	box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+div#wrapper {
+  position: relative;
+  z-index: 1000;
+  color: #1d1d24;
 }
-	img {
-		width: 100%;
-	}
 
-[class*="row"] {
-	margin-bottom: 1em;
-  justify-content: center;
+  .section-border {
+    box-shadow: 8px 8px 5px #888888;
+    margin-top: 20px;
+  min-height: 230px;
+      border-radius: 3px;
+  }
+
+  .sec-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: -1em;
+    padding: 20px;
+    margin-left: 15px;
+  }
+
+  .section-line {
+    width: 60%;
+    border: 2px solid #1EB39A;
+  }
+
+  .section-title-line {
+    width: 30%;
+    border: 1px solid #343434;
+  }
+
+  .section-para {
+    margin-top: 5px;
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+      font-family: montserrat, sans-serif;
+      padding-bottom: 10px;
+
+  }
+
+  .three-section-header {
+    font-size: 25px;
+    font-family: montserrat, sans-serif;
+    margin-left: 15px;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+
+.call-section {
+  margin-top: 150px;
+  transform: skewY(0deg);
+  transform-origin: 0;
+  background-image: url('../img/gaming2.png');
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  text-align: center;
+  font-family: montserrat, sans-serif;
+  margin-bottom: -49px;
+}
+
+.call-to-action {
+  background-color: rgba(0,0,0,0.5);
+  width: 1413px;
+  height: 250px;
+}
+
+.call-header {
+  color: white;
+  margin-top: 5%;
+}
+
+.call-button {
 }
 
 .footer-section {
+  background: inherit;
   margin-top: 40px;
 }
 
 .social {
       margin: 0 auto;
 }
+
+@media (max-width: 575px) {
+  .twitter {
+    display: none;
+  }
+
+  .background {
+    height: 700px;
+}
+
+.call-section {
+  margin-top: 10px;
+  height: 200px;
+}
+
+  .slant-left.above {
+    margin-top: -450px;
+  }
+ }
