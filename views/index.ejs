@@ -1,5 +1,5 @@
 <% include partials/header.ejs %>
-    <nav class="navbar navbar-expand-lg header bg-light py-4">
+    <nav class="navbar navbar-expand-lg header my-nav py-4">
           <a class="text-dark navbar-brand" href="#">Logo Goes Here</a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
     </nav>
@@ -13,8 +13,9 @@
           </div>
           <h3 class="text-center text-light mt-5 email-call">We're building something cool for<br />streamers. Stay in the know. </h3>
           <form>
-      <div class="form-group">
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Email Address">
+      <div class="form-group email-form">
+        <input type="email" class="form-control" placeholder="Enter Your Email Address">
+              <button class="btn btn-lg btn-outline-light mt-3 call-button-1">Submit</button>
       </div>
     </form>
 
@@ -60,17 +61,14 @@
                     <div id="bg"></div>
                     <div id='wrapper'>
                         <div id="top">
-                            <h1 class="text-center mt-5 three-section-title" style="color: #0085b6">Streamers First</h1>
+                            <h1 class="text-center mt-5 three-section-title" style="color: #3c3d41">Streamers First</h1>
                         </div>
                         <div id="center" class="container">
                           <div class="row">
                             <div class="col-md-4">
                                 <div class="section-border">
-                              <span class="sec-top">
-                                <i class="fa fa-headphones fa-4x" aria-hidden="true" style="color: #815fc0"></i>
-                                <span class="three-section-header">Always Free for Streamers</span>
-                              </span>
-                                  <hr class="section-line" />
+                                <i class="fa fa-headphones fa-5x" aria-hidden="true" style="color: #003D87"></i>
+                                <h3 class="three-section-header">Always Free for Streamers</h3>
                                 <p class="section-para">
                                     No hidden fees. No day 1 DLC.None of that Bullshit.
                                 </p>
@@ -79,12 +77,8 @@
 
                               <div class="col-md-4">
                                   <div class="section-border">
-                                <span class="sec-top">
-                                  <i class="fa fa-compass fa-3x" aria-hidden="true" style="color: #815fc0"></i>
-                                  <span class="three-section-header">Your Content, Your Way</span>
-                                </span>
-                                    <hr class="section-line" />
-
+                                  <i class="fa fa-compass fa-5x" aria-hidden="true" style="color: #003D87"></i>
+                                  <h3 class="three-section-header">Your Content, Your Way</h3>
                                   <p class="section-para">
                                      Forge your own channel. Select from a variety of sponsors that fit your following.
                                   </p>
@@ -93,11 +87,9 @@
 
                                 <div class="col-md-4">
                                     <div class="section-border">
-                                  <span class="sec-top">
-                                    <i class="fa fa-compass fa-3x" aria-hidden="true" style="color: #815fc0"></i>
-                                    <span class="three-section-header">Quit Your Day Job</span>
-                                  </span>
-                                      <hr class="section-line" />
+
+                                    <i class="fa fa-compass fa-5x" aria-hidden="true" style="color: #003D87"></i>
+                                    <h3 class="three-section-header">Quit Your Day Job</h3>
 
                                     <p class="section-para">
                                         You love streaming. Why not go full time? We'll make it easy for you.
@@ -119,5 +111,5 @@
                     </div>
                 </div>
             </div>
-            
+
 <% include partials/footer.ejs %>
