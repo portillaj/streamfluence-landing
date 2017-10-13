@@ -19,7 +19,7 @@ background-image: url('../img/twitch-image-1.jpg');*/
 border: 1px solid #979797;
   background-position: center;
   background-size: cover;
-  height: 1300px;
+  height: 1130px;
   background-attachment: fixed;
 }
 
@@ -126,15 +126,16 @@ font-size: 12px;
 
  div#bg {
  width: 100%;
- height: 600px;
+ height: 653px;
  position: absolute;
- background-color: #F6F6F6;
- transform: skewY(-12deg);
+ /* Rectangle: */
+ background-image: linear-gradient(180deg, #93BFDB 3%,  #FFFFFF 50%, #FFFFFF 100%, #DFDFDF 100%, #EEEEEE 100%, #3881DD 100%);
+ /* IE6-9 fallback on horizontal gradient */
+ transform: skewY(-10deg);
  transform-origin: 0;
  margin-top: 35px;
-border-top: 3px solid #3c3d41;
+border-top: 3px solid #0066aa;
 }
-
 
 div#wrapper {
   position: relative;
@@ -204,7 +205,7 @@ margin-bottom: -200px;
 }
 
 #myFooter .footer-copyright {
-    background-color: #0085b6;
+    background-color: #262a2f;
     padding-top: 3px;
     padding-bottom: 3px;
     text-align: center;
