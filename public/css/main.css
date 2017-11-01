@@ -14,22 +14,18 @@ html, body {
   height: 1080px;
 }
 
+.main-logo {
+  width: 300px;
+  height: 80px;
+}
+
 .background {
-background-image: url('../img/twitch6.png');*/
-border: 1px solid #979797;
+  background-image: url('../img/Cloud3.png');
+  border: 1px solid #979797;
   background-position: center;
   background-size: cover;
   height: 1130px;
   background-attachment: fixed;
-}
-
-.overlay {
-  background: rgba(77, 127,199,0.3);
-  width: 100%;
-  height: 1200px;
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 
 .email-call {
@@ -245,9 +241,25 @@ div#wrapper {
     height: 800px;
 }
 
+div#bg {
+  margin-top: 80px;
+}
+
 .call-section {
   margin-top: 10px;
-  height: 200px;
+  height: 250px;
+}
+
+.main-logo {
+  margin-left: 80px;
+}
+
+.call-header {
+  margin-top: 70px;
+}
+
+.three-section-title {
+  padding-top: 90px;
 }
 
 #top {
@@ -256,5 +268,9 @@ div#wrapper {
 
   .slant-left.above {
     margin-top: -450px;
+  }
+
+  .social-networks {
+    margin-top: 10px;
   }
  }
