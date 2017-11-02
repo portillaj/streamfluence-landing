@@ -18,10 +18,11 @@
   },
   "homepage": "https://github.com/portillaj/streamfluence-landing#readme",
   "dependencies": {
-    "axios": "^0.16.2",
     "body-parser": "^1.18.2",
     "ejs": "^2.5.7",
     "express": "^4.16.1",
-    "twitter": "^1.7.1"
+    "mailgun-js": "^0.13.1",
+    "nconf": "^0.8.5",
+    "nodemailer": "^4.3.1"
   }
 }
