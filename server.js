@@ -12,7 +12,7 @@ const nodemailer = require('nodemailer');
 
 // Mailgun Configuration
 // TODO: Store Valeus on Memory (nconf)
-const api_key = 'key-9e1cb4c0108940147364dd32b0f4ff34';
+const api_key = 'key-fe778455a8a4de019834d9bb8f4766e4';
 const domain = 'streamfluence.io';
 const mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 const nconf = require('nconf');
