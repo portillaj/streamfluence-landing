@@ -41,10 +41,20 @@ body, html {
     line-height: 28px;
     letter-spacing: 1px;
 }
+
+.email-input {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    border-radius: 5px;
+    height: 40px;
+}
 .form-control {
     width: 40%;
     background: #fff;
-    margin-left: 30%}
+    margin-left: 30%
+}
+
 .call-button-1 {
     display: inline-block;
 }
@@ -183,11 +193,13 @@ div#wrapper {
 div#bg {
     margin-top: -70px;
 }
-}@media (max-width:991px) {
+}
+@media (max-width:991px) {
     div#bg {
     height: 800px;
 }
-}@media (max-width:850px) {
+}
+@media (max-width:850px) {
     .form-control {
     width: 55%;
     text-align: center;
@@ -195,7 +207,8 @@ div#bg {
 .three-section-title {
     margin-top: -200px;
 }
-}@media (max-width:750px) {
+}
+@media (max-width:750px) {
     #myFooter, .form-control {
     text-align: center;
 }
@@ -208,7 +221,10 @@ div#bg {
 div#bg {
     height: 1250px;
 }
-}@media (max-width:575px) {
+
+}
+
+@media (max-width:575px) {
     .background {
     height: 850px;
 }
@@ -242,5 +258,9 @@ input.form-control {
 div#bg {
     margin-top: 350px;
     height: 970px;
+}
+
+.call-button-1:hover {
+   background: none;
 }
 }
