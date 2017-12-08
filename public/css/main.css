@@ -4,6 +4,7 @@
 
 #center {
     height: 300px;
+    background-image: linear-gradient(180deg, #93BFDB 3%, #FFF 50%, #FFF 100%, #DFDFDF 100%, #EEE 100%, #3881DD 100%); 
 }
 
 .email-form {
@@ -11,7 +12,6 @@
 }
 body, html {
     height: 100vh;
-    background-image: linear-gradient(180deg, #93BFDB 3%, #FFF 50%, #FFF 100%, #DFDFDF 100%, #EEE 100%, #3881DD 100%); 
     max-width: 100%; 
 }
 .header a {
@@ -37,12 +37,11 @@ body, html {
     border: 1px solid #979797;
     background-position: right top;
     background-size: cover;
-    height: 1270px;
+    min-height: 1270px;
     background-attachment: fixed;
     width: 100%;
     overflow-x: hidden;
-    clip-path: polygon(0 0, 100% 0, 200% 100vh, 0 90%);
-     
+    clip-path: polygon(0 0, 100% 0, 200% 75vh, 0 90%);
 }
 
 .email-call {
@@ -197,31 +196,63 @@ div#bg {
 }
 }
 @media (max-width:850px) {
-    .form-control {
+.form-control {
     width: 55%;
     text-align: center;
-    margin-left: 25%}
-.three-section-title {
-    margin-top: -200px;
+    margin-left: 25%
 }
+.background {
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 250% 75vh, 0 75%);
+     
+}
+.three-section-title {
+    padding-top: 170px;
+}
+
+.three-section-part {
+    padding-bottom: 100px;
+}
+
+#center {
+    height: 610px;
+    margin-top: -62vh;
+    margin-bottom: 0;
+}
+
+.call-header {
+    margin-top: 75px;
+}
+
+.call-section {
+    margin-top: 0;
+}
+
 }
 @media (max-width:750px) {
     #myFooter, .form-control {
     text-align: center;
 }
+#center {
+    height: 1000px;
+}
 
 .form-control {
     width: 60%;
-    margin-left: 20%}
-div#bg {
-    height: 1250px;
+    margin-left: 20%
 }
 
 }
 
 @media (max-width:575px) {
-    .background {
-    height: 850px;
+.background {
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 250% 55vh, 0 75%);
+}
+
+#center {
+    margin-top: -70vh;
+    height: 1040px;
 }
 .call-section {
     margin-top: 10px;
@@ -234,15 +265,10 @@ div#bg {
     margin-top: 70px;
 }
 .three-section-title {
-    padding-top: 400px;
+    padding-top: 250px;
     font-size: 30px;
 }
-#top {
-    margin-top: 50px;
-}
-.slant-left.above {
-    margin-top: -450px;
-}
+
 .social-networks {
     margin-top: 10px;
 }
@@ -250,11 +276,6 @@ input.form-control {
     width: 70%;
     margin: 0 auto;
 }
-div#bg {
-    margin-top: 350px;
-    height: 970px;
-}
-
 .call-button-1:hover {
    background: none;
 }
