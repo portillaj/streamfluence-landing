@@ -213,9 +213,7 @@ div#bg {
     #myFooter, .form-control {
     text-align: center;
 }
-.three-section-title, div#bg {
-    margin-top: -150px;
-}
+
 .form-control {
     width: 60%;
     margin-left: 20%}
