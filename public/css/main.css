@@ -2,12 +2,6 @@
     text-align: center;
 }
 
-#center {
-    margin-top: -350px;
-    height: 520px;
-    background-image: linear-gradient(180deg, #93BFDB 3%, #FFF 50%, #FFF 100%, #DFDFDF 100%, #EEE 100%, #3881DD 100%); 
-}
-
 .email-form {
     margin-bottom: 80px;
 }
@@ -42,7 +36,9 @@ body, html {
     background-attachment: fixed;
     width: 100%;
     overflow-x: hidden;
-    clip-path: polygon(0 0, 100% 0, 200% 100vh, 0 90%);
+     -webkit-clip-path: polygon(0 0, 100% 0, 300% 100vh, 0 90%);
+     -moz-clip-path: polygon(0 0, 100% 0, 300% 100vh, 0 90%);
+     -ms-clip-path: polygon(0 0, 100% 0, 300% 100vh, 0 90%);
 }
 
 .email-call {
@@ -94,10 +90,14 @@ body, html {
     width: 80%;
     margin: 50px auto 0;
     padding-bottom: 45px;
-    display: relative;
-    left: 0;
-    top: 0;
 }
+
+#center {
+    margin-top: -350px;
+    height: 520px;
+    background-image: linear-gradient(180deg, #93BFDB 3%, #FFF 50%, #FFF 100%, #DFDFDF 100%, #EEE 100%, #3881DD 100%); 
+}
+
 
 .section-border {
     margin-top: 20px;
@@ -111,7 +111,7 @@ body, html {
     font-family: Raleway, sans-serif;
 }
 .three-section-title {
-    padding-top: 200px;
+    padding-top: 250px;
 }
 .three-section-header {
     font-size: 25px;
@@ -203,7 +203,9 @@ div#bg {
 }
 .background {
     height: 100vh;
-    clip-path: polygon(0 0, 100% 0, 760% 100vh, 0 75%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 760% 100vh, 0 75%);
+    -moz-clip-path: polygon(0 0, 100% 0, 760% 100vh, 0 75%);
+    -ms-clip-path: polygon(0 0, 100% 0, 760% 100vh, 0 75%);
      
 }
 .three-section-title {
@@ -246,7 +248,9 @@ div#bg {
 @media (max-width:575px) {
 .background {
     height: 100vh;
-    clip-path: polygon(0 0, 100% 0, 740% 100vh, 0 75%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 740% 100vh, 0 75%);
+     -moz-clip-path: polygon(0 0, 100% 0, 740% 100vh, 0 75%);
+      -ms-clip-path: polygon(0 0, 100% 0, 740% 100vh, 0 75%);
 }
 
 #center {
