@@ -1,13 +1,15 @@
+
+body, html {
+    height: 100vh;
+    max-width: 100%; 
+}
+
 .call-section, .email-form, .section-border, input {
     text-align: center;
 }
 
 .email-form {
     margin-bottom: 80px;
-}
-body, html {
-    height: 100vh;
-    max-width: 100%; 
 }
 .header a {
     color: #fff;
@@ -39,6 +41,10 @@ body, html {
      -webkit-clip-path: polygon(0 0, 100% 0, 300% 100vh, 0 90%);
      -moz-clip-path: polygon(0 0, 100% 0, 300% 100vh, 0 90%);
      -ms-clip-path: polygon(0 0, 100% 0, 300% 100vh, 0 90%);
+}
+
+#myModal {
+    z-index: 3000;
 }
 
 .email-call {
