@@ -203,11 +203,11 @@ div#bg {
 }
 .background {
     height: 100vh;
-    clip-path: polygon(0 0, 100% 0, 250% 75vh, 0 75%);
+    clip-path: polygon(0 0, 100% 0, 760% 100vh, 0 75%);
      
 }
 .three-section-title {
-    padding-top: 170px;
+    padding-top: 120px;
 }
 
 .three-section-part {
@@ -216,7 +216,6 @@ div#bg {
 
 #center {
     height: 610px;
-    margin-top: -62vh;
     margin-bottom: 0;
 }
 
@@ -229,12 +228,12 @@ div#bg {
 }
 
 }
-@media (max-width:750px) {
+@media (max-width:767px) {
     #myFooter, .form-control {
     text-align: center;
 }
 #center {
-    height: 1000px;
+    height: 900px;
 }
 
 .form-control {
@@ -247,11 +246,10 @@ div#bg {
 @media (max-width:575px) {
 .background {
     height: 100vh;
-    clip-path: polygon(0 0, 100% 0, 250% 55vh, 0 75%);
+    clip-path: polygon(0 0, 100% 0, 740% 100vh, 0 75%);
 }
 
 #center {
-    margin-top: -70vh;
     height: 900px;
 }
 .call-section {
